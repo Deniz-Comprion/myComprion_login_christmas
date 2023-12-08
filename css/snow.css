@@ -1,0 +1,99 @@
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/img/snow.png);
+    background-repeat: repeat;
+    -webkit-animation: snowfall01 20s linear infinite;
+    animation: snowfall01 20s linear infinite;
+}
+
+.snow::before {
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/img/snow.png);
+    background-repeat: repeat;
+    content: '';
+    -webkit-animation: snowfall02 20s linear infinite;
+    animation: snowfall02 20s linear infinite;
+}
+
+.snow::after {
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/img/snow.png);
+    background-repeat: repeat;
+    content: '';
+    -webkit-animation: snowfall03 20s linear infinite;
+    animation: snowfall03 20s linear infinite;
+}
+
+@-webkit-keyframes snowfall01 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 150px 100vh;
+    }
+}
+
+@-webkit-keyframes snowfall02 {
+    0% {
+        background-position: 0 -200px;
+    }
+
+    100% {
+        background-position: 0 100vh;
+    }
+}
+
+@-webkit-keyframes snowfall03 {
+    0% {
+        background-position: 0 200px;
+    }
+
+    100% {
+        background-position: 300px 100vh;
+    }
+}
+
+@keyframes snowfall01 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 150px 100vh;
+    }
+}
+
+@keyframes snowfall02 {
+    0% {
+        background-position: 0 -200px;
+    }
+
+    100% {
+        background-position: 0 100vh;
+    }
+}
+
+@keyframes snowfall03 {
+    0% {
+        background-position: 0 200px;
+    }
+
+    100% {
+        background-position: 300px 100vh;
+    }
+}
