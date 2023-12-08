@@ -6,25 +6,11 @@
     height: 100vh;
     background-image: url(../media/img/snow.png);
     background-repeat: repeat;
-    -webkit-animation: snowfall01 20s linear infinite;
-    animation: snowfall01 20s linear infinite;
+    -webkit-animation: snowfall01 40s linear infinite;
+    animation: snowfall01 40s linear infinite;
 }
 
 .snow::before {
-    opacity: .6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../media/img/snow.png);
-    background-repeat: repeat;
-    content: '';
-    -webkit-animation: snowfall02 20s linear infinite;
-    animation: snowfall02 20s linear infinite;
-}
-
-.snow::after {
     opacity: .4;
     position: absolute;
     top: 0;
@@ -34,8 +20,22 @@
     background-image: url(../media/img/snow.png);
     background-repeat: repeat;
     content: '';
-    -webkit-animation: snowfall03 20s linear infinite;
-    animation: snowfall03 20s linear infinite;
+    -webkit-animation: snowfall02 50s linear infinite;
+    animation: snowfall02 50s linear infinite;
+}
+
+.snow::after {
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/img/snow.png);
+    background-repeat: repeat;
+    content: '';
+    -webkit-animation: snowfall03 60s linear infinite;
+    animation: snowfall03 60s linear infinite;
 }
 
 @-webkit-keyframes snowfall01 {
@@ -50,7 +50,7 @@
 
 @-webkit-keyframes snowfall02 {
     0% {
-        background-position: 0 -200px;
+        background-position: 0 -400px;
     }
 
     100% {
@@ -60,11 +60,11 @@
 
 @-webkit-keyframes snowfall03 {
     0% {
-        background-position: 0 200px;
+        background-position: 0 400px;
     }
 
     100% {
-        background-position: 300px 100vh;
+        background-position: 600px 100vh;
     }
 }
 
@@ -80,7 +80,7 @@
 
 @keyframes snowfall02 {
     0% {
-        background-position: 0 -200px;
+        background-position: 0 -400px;
     }
 
     100% {
@@ -90,10 +90,10 @@
 
 @keyframes snowfall03 {
     0% {
-        background-position: 0 200px;
+        background-position: 0 400px;
     }
 
     100% {
-        background-position: 300px 100vh;
+        background-position: 600px 100vh;
     }
 }
